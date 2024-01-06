@@ -1,6 +1,6 @@
 # PROJEK WEB HCI LEC - COMP6800001
 
-![image](https://github.com/jon-brandy/BayMed/assets/70703371/dac0f83f-6ae9-4945-86f4-d1aa9e4a7e5f)
+![image](https://github.com/jon-brandy/BayMed/assets/70703371/f5fb51a4-60ad-4b6c-adb2-7b5ab4ccf77a)
 
 
 </details>
