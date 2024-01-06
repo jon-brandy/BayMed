@@ -16,4 +16,6 @@
   |3. |2540124620|Jeffrey Jingga|
   |4. |2540119633|Mikael Wiryamanta Wijaya|
   |5. |2540115181|Pitra Winarianto|
+  |6. |2540123082|Steven Liem|
+  
 </details>
