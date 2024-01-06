@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTER PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/styles/register.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="../img/BayMedLogo.png" width="200" /></a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./medicines.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="./cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="./feedback.html">Feedback</a></li>
+
+          <a href="#"><button>Register</button></a>
+        </ul>
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+    <section id="form-section">
+      <div class="background"></div>
+      <div class="wrapper">
+        <div class="form-box regis">
+          <h2 class="title">Register</h2>
+          <form action="" id="form-regis" onsubmit="validate(event)">
+            <div class="input-box">
+              <input type="text" name="name" id="name" class="inputted"/>
+              <label>Nama Lengkap</label>
+            </div>
+
+            <div class="input-box">
+              <input type="email" id="email" name="email"class="inputted" />
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <input type="password" id="password" name="pass" class="inputted" />
+              <label>Password</label>
+            </div>
+
+            <div class="input-box">
+              <input type="date" name="dob" id="dob" name="dob" class="inputted" />
+              <label>Tanggal lahir</label>
+            </div>
+
+            <label>Gender</label>
+            <div id="gender-container">
+              <div class="radio-container">
+                <input type="radio" id="male" name="gender" value="male"  />
+                <span id="desc">Laki-laki</span>
+              </div>
+              <div>
+                <input type="radio" id="female" name="gender" value="female" />
+                <span id="desc">Perempuan</span>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+            <section class="container">
+              <div id="error-line"></div>
+            </section>
+            <div class="login-container">
+                <p>Sudah punya akun?</p> 
+                <p><a href="./login.html">
+                    <strong>Masuk!</strong></a>
+                </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- START OF FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Kontak<h4>
+            <p><strong>Alamat :</strong></p>
+            <p>Jl. Pil Biru 2 Nomor 15 Jakarta 12345</p>
+            <p><strong>Nomor Telpon :</strong></p>
+            <p>+62 12345 888 99</p>
+        </div>
+        <div class="col">
+                <h4>Sosial Media Kami</h4>
+                <div class="icon">
+                  <a href="https://www.facebook.com/universitasbinanusantara/?locale=id_ID" target="_blank"><i class="fab fa-facebook-f"></i> @baymed.id</a>
+                  <a href="https://www.instagram.com/saputra.nicolas_/" target="_blank"><i class="fab fa-instagram"></i> @baymed.id</a>
+                </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright 2023 BayMed | All Rights Reserved</p>
+        </div>
+  
+    </footer>
+
+    <script src="../assets/scripts/script.js"></script>
+    <script>
+      // Add an event listener to the form
+      document.getElementById('registrationForm').addEventListener('submit', Register);
+    </script>
+  </body>
+</html>

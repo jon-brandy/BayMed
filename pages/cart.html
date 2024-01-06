@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/styles/cart.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="../img/BayMedLogo.png" width="200" /></a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./medicines.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="./feedback.html">Feedback</a></li>
+          <a href="./register.html"><button>Register</button></a>
+        </ul>
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+    <div class="container">
+        <div class="medicine-store-card">
+        <h2 style="text-align:center">Keranjang <span style="background-image: linear-gradient(to right, #d44d79, #964699); -webkit-background-clip: text; color: transparent;">ANDA</span> </h2>
+      </div>
+    </div>
+    <main class="table">
+      <section class="table-body">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Nama Obat</th>
+              <th>Harga</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th class="delete-class">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Soricox 120mg Fc Tablet</td>
+              <td>Rp.16,500.00</td>
+              <td>2</td>
+              <td>
+                <p>RP.33,000.00</p>
+              </td>
+              <td><strong>X</strong></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Lipitor 80mg Tablet</td>
+              <td>Rp.30,022.00</td>
+              <td>1</td>
+              <td>
+                <p>Rp.30,022.00</p>
+              </td>
+              <td><strong>X</strong></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ibuprofen Triman 400mg Tablet</td>
+              <td>Rp.414.00</td>
+              
+              <td>10</td>
+              <td>
+                <p>Rp.4,140.00</p>
+              </td>
+              <td><strong>X</strong></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Panadol Biru Tablet 1 Strip</td>
+              <td>Rp.13,011.00</td>
+              
+              <td>1</td>
+              <td>
+                <p>Rp.13,011.00</p>
+              </td>
+              <td><strong>X</strong></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Omeprazole Dexa 20mg Kapsul</td>
+              <td>Rp.755.00</td>
+              
+              <td>10</td>
+              <td>
+                <p>Rp.7,550.00</p>
+              </td>
+              <td><strong>X</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+      <section>
+        <div class="contain-tot">
+            <h1>Total Harga : <span style="background-image: linear-gradient(#964699, #d44d79); -webkit-background-clip: text; color: transparent;">Rp.87,723.00</span></h1>           
+        </div>
+        <div class="container-btn">
+          <button class="checkout-btn" id="openModal">Checkout</button>
+          <div class="modal" id="modal">
+            <div class="modal-inner">
+              <button class="closeBtn" id="closeModal">X</button>
+              <h2>BUKTI PEMESANAN</h2>
+              <br>
+             
+              <p style="text-align: center;">Resi: 2Q78DGHQ2B9UD9</p>
+              <br>
+              <hr>
+              <br>
+              <p>Obat yang dipesan:</p>
+              <ul>
+                <li>1. Soricox 120mg Fc Tablet - Rp.33,000.00</li>
+                <li>2. Lipitor 80mg Tablet - Rp.30,022.00</li>
+                <li>3. Ibuprofen Triman 400mg Tablet - Rp.4,140.00</li>
+                <li>4. Panadol Biru Tablet 1 Strip - Rp.13,011.00</li>
+                <li>5. Omeprazole Dexa 20mg Kapsul - Rp.7,550.00</li>
+              </ul>
+              <br>
+              <hr>
+              <br>
+              <h3>Total: <span style="background-image: linear-gradient(#964699, #d44d79); -webkit-background-clip: text; color: transparent;">Rp.87,723.00</span></h3>
+              <br>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- START OF FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Kontak<h4>
+            <p><strong>Alamat  :</strong></p>
+            <p>Jl. Pil Biru 2 Nomor 15 Jakarta 12345</p>
+            <p><strong>Nomor Telpon :</strong></p>
+            <p>+62 12345 888 99</p>
+        </div>
+        <div class="col">
+                <h4>Sosial media kami</h4>
+                <div class="icon">
+                  <a href="https://www.facebook.com/universitasbinanusantara/?locale=id_ID" target="_blank"><i class="fab fa-facebook-f"></i> @baymed.id</a>
+                  <a href="https://www.instagram.com/saputra.nicolas_/" target="_blank"><i class="fab fa-instagram"></i> @baymed.id</a>
+                </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright 2023 BayMed | All Rights Reserved</p>
+        </div>
+  
+    </footer>
+    <script src="../assets/scripts/cart.js" async defer></script>
+    <script src="../assets/scripts/script.js" async defer></script>
+  </body>
+</html>
