@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../assets/styles/detail.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="../../img/BayMedLogo.png" width="200" /></a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../medicines.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="../cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="../feedback.html">Feedback</a></li>
+
+          <a href="../register.html"><button>Register</button></a>
+        </ul>
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- 1st card -->
+    <section id="description">
+      <div class="container">
+        <div class="medicine-store-card">
+          <button class="back-button" onclick="window.history.back()">Back</button>
+          <div class="description">
+            <img src="../../img/amoxicillin.png" />
+          </div>
+          <div class="description-2">
+            <div class="quantity">
+              <button type="button" class="decrease" onclick="decrease()">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="50" id="quantity" />
+              <button type="button" class="increase" onclick="increase()">+</button>
+            </div>
+            <button type="button" class="add-to-cart" id="openModal">Tambah ke Keranjang</button>
+            <div class="modal" id="modal">
+              <div class="modal-inner">
+                <button class="closeBtn" id="closeModal">X</button>
+                <h2>SUKSES!</h2>
+                <p>Produk berhasil ditambahkan ke keranjang!</p>
+              </div>
+            </div>
+          </div>
+              <h2>Amoxicillin Dexa 500mg Tablet</h2>
+                <div class="container-paragraph">
+                    <p>
+                      AMOXICILLIN DEXA 500MG TAB 100S merupakan obat antibiotik golongan penisilin. Amoxicillin tersedia dalam bentuk tablet maupun sirup. Obat ini menghambat pertumbuhan bakteri yang menyebabkan infeksi dalam tubuh dengan cara menghambat pembentukan dinding sel bakteri. Obat ini, didapatkan hanya dengan resep dokter dan tidak dijual bebas.
+                    </p>
+                    <br>
+                    <p>
+                      Amoxicillin digunakan untuk mengobati infeksi seperti: 
+                    </p>
+                    <ul>
+                      <li>1. Bronkitis akut.</li>
+                      <li>2. Infeksi THT (telinga, hidung, dan tenggorokan) seperti, -sinus -infeksi telinga luar (otitis eksterna) -infeksi telinga tengah (otitis media).</li>
+                      <li>3. Infeksi saluran kencing.</li>
+                      <li>4. Infeksi kulit.</li>
+                      <li>5. Infeksi organ kelamin seperti gonore.</li>
+                    </ul>
+                    <br>
+                    <p>Amoxicillin dapat dikonsumsi bersamaan dengan makan untuk menghindari efek tidak nyaman pada sistem pencernaan. Amoxicillin harus dikonsumsi sampai habis untuk mencegah resistensi atau keadaan di mana kuman tidak dapat lagi dibunuh dengan obat ini. Penggunaan antibiotik yang berlebihan atau tidak mengikuti anjuran dokter sangatlah berbahaya dan dapat menyebabkan efektivitasnya menurun. Beritahukan dokter yang menangani bila sedang hamil, berencana hamil ataupun sedang menyusui. Hati-hati penggunaan pada penderita yang mempunyai riwayat alergi terhadap antibiotik Amoxicillin karena dapat menimbulkan reaksi pada kulit yang ditandai dengan munculnya bentol berwarna kemerahan disertai rasa gatal, penderita asma, gangguan fungsi ginjal dan hati. 
+                    </p>
+                    <br>
+                    <p>Ada beberapa interaksi yang dapat terjadi, bila menggunakan amoxillin bersamaan dengan obat lain, seperti:</p>
+                    <ul>
+                      <li>1. Meningkatnya efek samping dari obat amoxicillin, jika digunakan dengan obat probenecid.</li>
+                      <li>2. Meningkatnya risiko alergi obat seperti ruam kulit, bila dikonsumsi bersamaan dengan obat allopurinol. </li>
+                      <li>3. Meningkatnya risiko perdarahan jika digunakan bersamaan dengan obat pengencer darah. </li>
+                      <li>4. Menurunkan efektivitas kontrasepsi oral.</li>
+                    </ul>
+                    <br>
+                      <h3>Komposisi</h3>
+                    <p>Amoxicillin 500 mg.</p>
+                    <br>
+                      <h3>Indikasi</h3>
+                    <p>Amoxicillin digunakan untuk mengobati infeksi telinga tengah, radang tenggorokan, infeksi saluran pernafasan atas, infeksi saluran kemih, saluran cerna, kulit dan jaringan lunak.</p>
+                    <br>
+                    <h3>Dosis</h3>
+                  <p>Dewasa: 250-500 mg setiap 8 jam (3x sehari) , Anak-anak: 20-40mg kg/BB/hari dalam 3 dosis terbagi.</p>
+                  <br>
+                    <h3>Aturan Pakai</h3>
+                    <p>Dapat diberikan bersama makanan agar diabsorpsi lebih baik & untuk mengurangi rasa tidak nyaman pada Gastrointestinal.</p>
+                    <br>
+                    <h3>Efek Samping</h3>
+                    <p>Reaksi hipersensitivitas seperti urtikaria, demam nyeri sendi, diare, syok anafilaksis, ruam eritematosus, leukemia limfatik kronik, dan iritasi gastrointestinal.</p>
+                    <br>
+                    <h3>Golongan Obat</h3>
+                      <p>Obat Keras.</p>
+                      <br>
+                    <h3>Kemasan</h3>
+                      <p>1 Dos isi 10 Strip x 10 Tablet.</p>
+                      <br>
+                    <h3>Manufaktur</h3>
+                      <p>DEXA.</p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- START OF FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Kontak<h4>
+            <p><strong>Alamat :</strong></p>
+            <p>Jl. Pil Biru 2 Nomor 15 Jakarta 12345</p>
+            <p><strong>Nomor Telpon :</strong></p>
+            <p>+62 12345 888 99</p>
+        </div>
+        <div class="col">
+                <h4>Sosial Media Kami</h4>
+                <div class="icon">
+                  <a href="https://www.facebook.com/universitasbinanusantara/?locale=id_ID" target="_blank"><i class="fab fa-facebook-f"></i> @baymed.id</a>
+                  <a href="https://www.instagram.com/saputra.nicolas_/" target="_blank"><i class="fab fa-instagram"></i> @baymed.id</a>
+                </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright 2023 BayMed | All Rights Reserved</p>
+        </div>
+  
+    </footer>
+
+    <script src="../../assets/scripts/script.js" async defer></script>
+    <script src="../../assets/scripts/cart.js" async defer></script>
+    <script>
+      document.getElementById('registrationForm').addEventListener('submit', formValidation);
+    </script>
+  </body>
+</html>

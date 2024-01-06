@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../assets/styles/detail.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="../../img/BayMedLogo.png" width="200" /></a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../medicines.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="../cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="../feedback.html">Feedback</a></li>
+
+          <a href="../register.html"><button>Register</button></a>
+        </ul>
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- 1st card -->
+    <section id="description">
+      <div class="container">
+        <div class="medicine-store-card">
+          <button class="back-button" onclick="window.history.back()">Back</button>
+          <div class="description">
+            <img src="../../img/ibuprofen.png" />
+          </div>
+          <div class="description-2">
+            <div class="quantity">
+              <button type="button" class="decrease" onclick="decrease()">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="120" id="quantity" />
+              <button type="button" class="increase" onclick="increase()">+</button>
+            </div>
+            <button type="button" class="add-to-cart" id="openModal">Tambah ke Keranjang</button>
+            <div class="modal" id="modal">
+              <div class="modal-inner">
+                <button class="closeBtn" id="closeModal">X</button>
+                <h2>SUKSES!</h2>
+                <p>Produk berhasil ditambahkan ke keranjang!</p>
+              </div>
+            </div>
+          </div>
+              <h2>Ibuprofen Triman 400mg Tablet</h2>
+                <div class="container-paragraph">
+                    <p>
+                      IBUPROFEN TRIMAN 400MG TAB 100S termasuk obat golongan nonsteroidal anti-inflammatory drug (NSAID) yang memiliki mekanisme kerja dengan cara menghambat enzim siklooksigenase sehingga konversi asam arakidonat menjadi terganggu serta menghalangi tubuh memproduksi prostaglandin, yaitu senyawa yang menyebabkan peradangan dan rasa sakit serta efektif terhadap nyeri dengan intensitas rendah sampai sedang, dan efektif terhadap nyeri yang berkaitan dengan inflamasi atau kerusakan jaringan seperti:
+                    </p>
+                    <ul>
+                      <li>1. Penyakit rematik tulang dan sendi.</li>
+                      <li>2. Gejala arthritis, osteoarthritis, dan non-sendi.</li>
+                      <li>3. Gejala-gejala akibat trauma otot dan tulang atau sendi (trauma muskuloskeletal).</li>
+                      <li>4. Nyeri ringan sampai sedang antara lain nyeri pada dismenore primer (nyeri haid), nyeri pada gigi, sakit kepala.</li>
+                    </ul>
+                    <br>
+                    <p>Ibuprofen dapat dikonsumsi bersamaan dengan makanan. Konsultasikan terlebih dahulu kepada dokter apabila akan digunakan pada pasien dengan kondisi:</p>
+                    <ul>
+                      <li>1. Riwayat alergi terhadap kandungan obat ini.</li>
+                      <li>2. Penderita riwayat tukak peptik.</li>
+                      <li>3. Gangguan fungsi ginjal.</li>
+                      <li>4. Koagulasi darah.</li>
+                      <li>5. Gagal jantung.</li>
+                      <li>6. Hipertensi.</li>
+                      <li>7. Retensi cairan tubuh.</li>
+                      <li>8. Asma.</li>
+                      <li>9. Lupus eritematosus sistemik.</li>
+                    </ul>
+                    <br>
+                    <p>Interaksi dapat terjadi apabila digunakan bersamaan dengan obat-obatan seperti:</p>
+                    <ul>
+                      <li>1. Ibuprofen dapat menurunkan efek dari obat golongan ACE inhibitor dan ARB.</li>
+                      <li>2. Peningkatan risiko luka atau pendarahan pada saluran pencernaan jika digunakan bersama dengan NSAID lain seperti aspirin, antiplatelet, antikoagulan (misalnya warfarin), kortikosteroid serta SSRI.</li>
+                    </ul>
+                    <br>
+                      <h3>Komposisi</h3>
+                    <p>
+                      Ibuprofen 400 mg.</p>
+                    <br>
+                      <h3>Indikasi</h3>
+                    <p>Nyeri dengan intensitas rendah sampai sedang seperti sakit kepala, sakit gigi, radang sendi, dan nyeri otot.</p>
+                    <br>
+                    <h3>Dosis</h3>
+                  <ul>
+                      <li>1. Dewasa 200 mg 3-4x sehari.</li>
+                      <li>2. Anak 1-12 tahun untuk mengurangi demam pada anak dengan suhu 39 derajat Celcius 10mg/kgBB diberikan 3-4x / hari.</li>
+                  </ul>
+                  <br>
+                    <h3>Aturan Pakai</h3>
+                    <p>Dapat diberikan bersamaan dengan makan.</p>
+                    <br>
+                    <h3>Efek Samping</h3>
+                    <ul>
+                        <li>1. Mual.</li>
+                        <li>2. Muntah.</li>
+                        <li>3. Diare.</li>
+                        <li>4. Konstipasi.</li>
+                        <li>5. Nyeri lambung.</li>
+                        <li>6. Ruam kulit. </li>
+                        <li>7. Bronkospasme.</li>
+                        <li>8. Trombositopenia.</li>
+                        <li>9. Limfopenia.</li>
+                        <li>10. Penurunan ketajaman penglihatan.</li>
+                        <li>11. Gangguan daya penglihatan.</li>
+                    </ul>
+                    <br>
+                    <h3>Golongan Obat</h3>
+                      <p>Obat Keras.</p>
+                      <br>
+                    <h3>Kemasan</h3>
+                      <p>
+                        1 Dos isi 10 Strip x 10 Tablet.</p>
+                      <br>
+                    <h3>Manufaktur</h3>
+                      <p>TRIMAN.</p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- START OF FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Kontak<h4>
+            <p><strong>Alamat :</strong></p>
+            <p>Jl. Pil Biru 2 Nomor 15 Jakarta 12345</p>
+            <p><strong>Nomor Telpon :</strong></p>
+            <p>+62 12345 888 99</p>
+        </div>
+        <div class="col">
+                <h4>Sosial Media Kami</h4>
+                <div class="icon">
+                  <a href="https://www.facebook.com/universitasbinanusantara/?locale=id_ID" target="_blank"><i class="fab fa-facebook-f"></i> @baymed.id</a>
+                  <a href="https://www.instagram.com/saputra.nicolas_/" target="_blank"><i class="fab fa-instagram"></i> @baymed.id</a>
+                </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright 2023 BayMed | All Rights Reserved</p>
+        </div>
+  
+    </footer>
+
+    <script src="../../assets/scripts/script.js" async defer></script>
+    <script src="../../assets/scripts/cart.js" async defer></script>
+    <script>
+      document.getElementById('registrationForm').addEventListener('submit', formValidation);
+    </script>
+  </body>
+</html>

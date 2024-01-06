@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../assets/styles/detail.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="../../img/BayMedLogo.png" width="200" /></a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../medicines.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="../cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="../feedback.html">Feedback</a></li>
+
+          <a href="../register.html"><button>Register</button></a>
+        </ul>
+        <div class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- 1st card -->
+    <section id="description">
+      <div class="container">
+        <div class="medicine-store-card">
+          <button class="back-button" onclick="window.history.back()">Back</button>
+          <div class="description">
+            <img src="../../img/paracetamol.png" />
+          </div>
+          <div class="description-2">
+            <div class="quantity">
+              <button type="button" class="decrease" onclick="decrease()">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="80" id="quantity" />
+              <button type="button" class="increase" onclick="increase()">+</button>
+            </div>
+            <button type="button" class="add-to-cart" id="openModal">Tambah ke Keranjang</button>
+            <div class="modal" id="modal">
+              <div class="modal-inner">
+                <button class="closeBtn" id="closeModal">X</button>
+                <h2>SUKSES!</h2>
+                <p>Produk berhasil ditambahkan ke keranjang!</p>
+              </div>
+            </div>
+          </div>
+            <h2>PANADOL BIRU TABLET 1 STRIP</h2>
+            <div class="container-paragraph">
+              <p>
+                PANADOL BIRU TABLET 1 STRIP memiliki kandungan bahan aktif Paracetamol. Paracetamol bekerja dengan cara mengurangi kadar prostaglandin di dalam tubuh, sehingga tanda peradangan seperti demam dan nyeri akan berkurang. Obat ini digunakan untuk meringankan rasa sakit seperti sakit kepala, sakit gigi serta menurunkan demam.
+              </p>
+              <br>
+              <p>
+                Paracetamol dapat dikonsumsi sesudah makan. Konsultasikan terlebih dahulu kepada dokter apabila akan digunakan pada pasien dengan kondisi:
+              </p>
+              <ul>
+                <li>1. Riwayat alergi terhadap kandungan obat ini.</li>
+                <li>2. Pasien dengan penyakit gangguan hati berat.</li>
+                <li>3. Pasien yang mengonsumsi alkohol dapat meningkatkan potensi kerusakan hati.</li>
+                <li>4. Pasien dengan penyakit gangguan ginjal.</li>
+              </ul>
+              <br>
+              <p>
+                Interaksi dapat terjadi apabila digunakan bersamaan dengan obat-obatan seperti:
+              </p>
+              <ul>
+                <li>1. Metoclopramide dapat meningkatkan efek analgetic paracetamol.</li>
+                <li>2. Paracetamol meningkatkan efek obat warfarin.</li>
+                <li>3. Carbamazepine meningkatkan potensi kerusakan hati.</li>
+              </ul>
+              <br>
+              <h3>Komposisi</h3>
+              <p>Paracetamol 500 mg.</p>
+              <br>
+              <h3>Indikasi</h3>
+              <p>Meringankan rasa sakit seperti sakit kepala, sakit gigi dan menurunkan demam.</p>
+              <br>
+              <h3>Dosis</h3>
+              <p>
+                <li>- Dewasa: 1-2 tablet, diberikan sebanyak 3-4 kali per hari.</li>
+                <li>- Anak usia 6-12 tahun: 1½-1 tablet, diberikan sebanyak 3-4 kali per hari.</li>
+              </p>
+              <br>
+              <h3>Aturan Pakai</h3>
+              <p>Dapat diberikan setelah makan.</p>
+              <br>
+              <h3>Efek Samping</h3>
+              <ul>
+                <li>1. Mual.</li>
+                <li>2. Muntah.</li>
+                <li>3. Nyeri lambung.</li>
+                <li>4. Kehilangan nafsu makan.</li>
+                <li>5. Ruam pada kulit.</li>
+              </ul>
+              <br>
+              <h3>Golongan Obat</h3>
+              <p>Obat Bebas.</p>
+              <br>
+              <h3>Kemasan</h3>
+              <p>1 Dos isi 10 Blister x 10 Tablet.</p>
+              <br>
+              <h3>Manufaktur.</h3>
+              <p>STERLING PRODUCTS INDONESIA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- START OF FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Kontak<h4>
+            <p><strong>Alamat :</strong></p>
+            <p>Jl. Pil Biru 2 Nomor 15 Jakarta 12345</p>
+            <p><strong>Nomor Telpon :</strong></p>
+            <p>+62 12345 888 99</p>
+        </div>
+        <div class="col">
+                <h4>Sosial Media Kami</h4>
+                <div class="icon">
+                  <a href="https://www.facebook.com/universitasbinanusantara/?locale=id_ID" target="_blank"><i class="fab fa-facebook-f"></i> @baymed.id</a>
+                  <a href="https://www.instagram.com/saputra.nicolas_/" target="_blank"><i class="fab fa-instagram"></i> @baymed.id</a>
+                </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Copyright 2023 BayMed | All Rights Reserved</p>
+        </div>
+  
+    </footer>
+
+    <script src="../../assets/scripts/script.js" async defer></script>
+    <script src="../../assets/scripts/cart.js" async defer></script>
+    <script>
+      document.getElementById('registrationForm').addEventListener('submit', formValidation);
+    </script>
+  </body>
+</html>
